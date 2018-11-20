@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C021A79219EFD3300473519 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C021A78219EFD3300473519 /* RatingControl.swift */; };
+		6C021A7B219F209100473519 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C021A7A219F209100473519 /* Meal.swift */; };
+		6C021A7D219F251A00473519 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C021A7C219F251A00473519 /* MealTableViewCell.swift */; };
+		6C021A7F219F2A1800473519 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C021A7E219F2A1800473519 /* MealTableViewController.swift */; };
 		6C2AC29E219DBECC007B45F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2AC29D219DBECC007B45F0 /* AppDelegate.swift */; };
-		6C2AC2A0219DBECC007B45F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2AC29F219DBECC007B45F0 /* ViewController.swift */; };
+		6C2AC2A0219DBECC007B45F0 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2AC29F219DBECC007B45F0 /* MealViewController.swift */; };
 		6C2AC2A3219DBECC007B45F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2AC2A1219DBECC007B45F0 /* Main.storyboard */; };
 		6C2AC2A5219DBECC007B45F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C2AC2A4219DBECC007B45F0 /* Assets.xcassets */; };
 		6C2AC2A8219DBECC007B45F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C2AC2A6219DBECC007B45F0 /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C021A78219EFD3300473519 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		6C021A7A219F209100473519 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6C021A7C219F251A00473519 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		6C021A7E219F2A1800473519 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		6C2AC29A219DBECC007B45F0 /* ProductMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2AC29D219DBECC007B45F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C2AC29F219DBECC007B45F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C2AC29F219DBECC007B45F0 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		6C2AC2A2219DBECC007B45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C2AC2A4219DBECC007B45F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C2AC2A7219DBECC007B45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				6C2AC29D219DBECC007B45F0 /* AppDelegate.swift */,
-				6C2AC29F219DBECC007B45F0 /* ViewController.swift */,
+				6C2AC29F219DBECC007B45F0 /* MealViewController.swift */,
+				6C021A78219EFD3300473519 /* RatingControl.swift */,
+				6C021A7A219F209100473519 /* Meal.swift */,
+				6C021A7C219F251A00473519 /* MealTableViewCell.swift */,
+				6C021A7E219F2A1800473519 /* MealTableViewController.swift */,
 				6C2AC2A1219DBECC007B45F0 /* Main.storyboard */,
 				6C2AC2A4219DBECC007B45F0 /* Assets.xcassets */,
 				6C2AC2A6219DBECC007B45F0 /* LaunchScreen.storyboard */,
@@ -188,7 +200,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = sf;
 				TargetAttributes = {
 					6C2AC299219DBECB007B45F0 = {
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C2AC2A0219DBECC007B45F0 /* ViewController.swift in Sources */,
+				6C021A7B219F209100473519 /* Meal.swift in Sources */,
+				6C2AC2A0219DBECC007B45F0 /* MealViewController.swift in Sources */,
+				6C021A79219EFD3300473519 /* RatingControl.swift in Sources */,
 				6C2AC29E219DBECC007B45F0 /* AppDelegate.swift in Sources */,
+				6C021A7F219F2A1800473519 /* MealTableViewController.swift in Sources */,
+				6C021A7D219F251A00473519 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +340,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -332,7 +350,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -374,7 +396,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -382,7 +406,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -505,6 +533,7 @@
 				6C2AC2C4219DBECC007B45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C2AC2C5219DBECC007B45F0 /* Build configuration list for PBXNativeTarget "ProductMarketTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +542,7 @@
 				6C2AC2C7219DBECC007B45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6C2AC2C8219DBECC007B45F0 /* Build configuration list for PBXNativeTarget "ProductMarketUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +551,7 @@
 				6C2AC2CA219DBECC007B45F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
